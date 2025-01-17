@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded' , () => {
   let scoreTimerId = setInterval(addScore, 2900);
 
   // matando função control para pular com qualquer tecla - assim utilizar via mobile também. 
-  function control(event) {
-    if (event.keyCode === 32) {
-        jump();
-    }
-  }
+ // function control(event) {
+   // if (event.keyCode === 32) {
+     //   jump();
+    //}
+  //}
 
   function jump() {
     if (birdBottom < 500) birdBottom += 50
