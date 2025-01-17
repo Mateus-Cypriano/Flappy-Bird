@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded' , () => {
   let gameTimerId = setInterval(startGame, 15);
   let scoreTimerId = setInterval(addScore, 2900);
 
+  // matando função control para pular com qualquer tecla - assim utilizar via mobile também. 
   function control(event) {
     if (event.keyCode === 32) {
         jump();
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     bird.style.bottom = birdBottom + 'px'
     // console.log(birdBottom)
   }
-  document.addEventListener('keyup', control)
+  document.addEventListener('keyup', jump)
 
   function generateObstacle() {
     let obstacleLeft = 550
